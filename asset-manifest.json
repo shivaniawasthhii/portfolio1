@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.ea7cb875.css",
-    "main.js": "/static/js/main.402227fb.js",
-    "static/media/plant1.png": "/static/media/plant1.24c8d49298fba8dbd645.png",
-    "static/media/Shivani-Awasthi-Resume.pdf": "/static/media/Shivani-Awasthi-Resume.f25d8396663e52595b05.pdf",
-    "static/media/shivani_pro.png": "/static/media/shivani_pro.28644e89caf61151b25c.png",
-    "index.html": "/index.html",
-    "main.ea7cb875.css.map": "/static/css/main.ea7cb875.css.map",
-    "main.402227fb.js.map": "/static/js/main.402227fb.js.map"
+    "main.css": "/portfolio1/static/css/main.ea7cb875.css",
+    "main.js": "/portfolio1/static/js/main.dfb0664b.js",
+    "static/media/plant1.png": "/portfolio1/static/media/plant1.24c8d49298fba8dbd645.png",
+    "static/media/Shivani-Awasthi-Resume.pdf": "/portfolio1/static/media/Shivani-Awasthi-Resume.f25d8396663e52595b05.pdf",
+    "static/media/shivani_pro.png": "/portfolio1/static/media/shivani_pro.28644e89caf61151b25c.png",
+    "index.html": "/portfolio1/index.html",
+    "main.ea7cb875.css.map": "/portfolio1/static/css/main.ea7cb875.css.map",
+    "main.dfb0664b.js.map": "/portfolio1/static/js/main.dfb0664b.js.map"
   },
   "entrypoints": [
     "static/css/main.ea7cb875.css",
-    "static/js/main.402227fb.js"
+    "static/js/main.dfb0664b.js"
   ]
 }
