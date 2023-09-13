@@ -56,9 +56,15 @@
     justify-content: space-between;
     /* flex-direction: column; */
   }
+  .techsection > div > svg {
+    /* height: 50%;
+    width: 50%; */
+    font-size: 4vh;
+    color: var(--clr-primary);
+  }
   .techsection > div {
     /* border: 2px solid blue; */
-   width: 18%;
+    width: 18%;
     margin: auto;
     margin-bottom: 2%;
     /* heig/ht: 108vh; */

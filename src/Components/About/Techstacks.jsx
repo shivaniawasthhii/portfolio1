@@ -4,12 +4,9 @@ import { FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
 import {
   SiRedux,
   SiHtml5,
-  
   SiExpress,
- 
   SiChakraui,
   SiPostman,
-
 } from "react-icons/si";
 import { DiCss3, DiMongodb, DiNpm } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
@@ -21,7 +18,9 @@ export const Techstacks = () => {
     <>
       <div className="section main">
         <h2 className="section__title different">Skills | Tools</h2>
-        <div className="techsection">
+        <div 
+        className="techsection"
+        >
           <div>
             <SiJavascript />
             <h5>Javascript</h5>
@@ -58,7 +57,7 @@ export const Techstacks = () => {
             <SiChakraui />
             <h5>Chakra UI</h5>
           </div>
-          
+
           <div>
             <FaBootstrap />
             <h5>Bootstrap</h5>
@@ -79,7 +78,6 @@ export const Techstacks = () => {
             <SiPostman />
             <h5>Post Man</h5>
           </div>
-        
         </div>
       </div>
     </>

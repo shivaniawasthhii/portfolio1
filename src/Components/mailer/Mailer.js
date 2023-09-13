@@ -8,7 +8,12 @@ export const Mailer = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(emailjs.send("service_3rycb9s", "template_rjb75t8", this))
+      .sendForm(
+        "service_3rycb9s",
+        "template_rjb75t8",
+        e.target,
+        "GXglpYLLl4aMLpaWj"
+      )
 
       .then((res) => {
         alert("Email sent to Shivani");
