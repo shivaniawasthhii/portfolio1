@@ -1,47 +1,69 @@
-import React from 'react'
-import emailjs from "emailjs-com"
+import React from "react";
+import emailjs from "emailjs-com";
 // import "./Mailer.css"
-import styled from 'styled-components'
-import { Box } from '@material-ui/core';
+import styled from "styled-components";
+import { Box } from "@material-ui/core";
 export const Mailer = () => {
+  function handleSentEmaail(e) {
+    e.preventDefault();
 
-    function handleSentEmaail(e){
-        
-        e.preventDefault();
+    emailjs
+      .sendForm(emailjs.send("service_3rycb9s", "template_rjb75t8", this))
 
-        emailjs.sendForm('service_3rycb9s', 'S04whjGHXjjghaoBT', e.target, 'S04whjGHXjjghaoBT').then(res=>{
-            alert("Email sent to Shivani")
-            console.log(res)
-        }).catch(err=>{
-            console.log(err)
-        })
-    }
+      .then((res) => {
+        alert("Email sent to Shivani");
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
 
   return (
-    <Box id='project' w={{base:"100%",md:"60%",lg:"40%"}} border={"1px solid red"}>
-        <StyledContactForm>
-    <form className='row' onSubmit={handleSentEmaail}>
-            <label  style={{color: "rgb(99, 7, 78)"}}>Name</label>
-            <input  type="text" name='name' className='form-control'  style={{border: "1px solid black"}} />
+    <Box
+      id="project"
+      w={{ base: "100%", md: "60%", lg: "40%" }}
+      border={"1px solid red"}
+    >
+      <StyledContactForm>
+        <form className="row" onSubmit={handleSentEmaail}>
+          <label style={{ color: "rgb(99, 7, 78)" }}>Name</label>
+          <input
+            type="text"
+            name="name"
+            className="form-control"
+            style={{ border: "1px solid black" }}
+          />
 
-            <label  style={{color: "rgb(99, 7, 78)"}}>Email</label>
-            <input  type="email" name='user_email' className='form-control'  style={{border: "1px solid black"}}/>
+          <label style={{ color: "rgb(99, 7, 78)" }}>Email</label>
+          <input
+            type="email"
+            name="user_email"
+            className="form-control"
+            style={{ border: "1px solid black" }}
+          />
 
-            <label  style={{color: "rgb(99, 7, 78)"}}>Message</label>
-            <textarea name='message' rows="4" className='form-control'  style={{border: "1px solid black"}}/>
-            
-            <input type="submit" value="Send" className='form-control btn btn-primary'   />
+          <label style={{ color: "rgb(99, 7, 78)" }}>Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            className="form-control"
+            style={{ border: "1px solid black" }}
+          />
+
+          <input
+            type="submit"
+            value="Send"
+            className="form-control btn btn-primary"
+          />
         </form>
-        </StyledContactForm>
-
-
-
-   </Box>
-  )
-}
+      </StyledContactForm>
+    </Box>
+  );
+};
 
 const StyledContactForm = styled.div`
-  width:100%;
+  width: 100%;
   form {
     display: flex;
     align-items: flex-start;
@@ -49,7 +71,7 @@ const StyledContactForm = styled.div`
     width: 100%;
     font-size: 16px;
     // border:1px solid white;
-    padding:20px;
+    padding: 20px;
     input {
       width: 100%;
       height: 35px;
@@ -77,7 +99,7 @@ const StyledContactForm = styled.div`
     }
     label {
       margin-top: 1rem;
-      color:white;
+      color: white;
     }
     input[type="submit"] {
       margin-top: 2rem;
@@ -86,4 +108,5 @@ const StyledContactForm = styled.div`
       color: white;
       border: none;
     }
-  }`
+  }
+`;

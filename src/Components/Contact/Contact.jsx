@@ -24,7 +24,7 @@ export const Contact = () => {
           </a>
           <Text marginLeft={"10px"}>shivani Awasthi</Text>
             </Box>
-          <Box marginTop={"10px"} display={"flex"} >
+          {/* <Box marginTop={"10px"} display={"flex"} >
           <a
             href="https://github.com/Awasthiishivanii"
             target="_blank"
@@ -34,7 +34,7 @@ export const Contact = () => {
             
           </a>
           <Text marginLeft={"6px"}>Awasthiishivanii </Text>
-          </Box>
+          </Box> */}
           
           <Box pl="8px"marginTop={"10px"} display={"flex"}>
           <a
