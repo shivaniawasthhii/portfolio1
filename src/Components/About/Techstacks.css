@@ -57,8 +57,6 @@
     /* flex-direction: column; */
   }
   .techsection > div > svg {
-    /* height: 50%;
-    width: 50%; */
     font-size: 4vh;
     color: var(--clr-primary);
   }
