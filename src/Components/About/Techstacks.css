@@ -54,7 +54,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* flex-direction: column; */
   }
   .techsection > div > svg {
     font-size: 4vh;
