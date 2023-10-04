@@ -3,24 +3,19 @@ import "./Projects.css";
 import plant from "../../Assets/images/plant1.png";
 export const Projects = () => {
   return (
-    <div
-      id="projects"
-      width="fit-content"
-      margin="auto"
-      border="1px solid red"
-    >
+    <div id="projects" width="fit-content" margin="auto" border="1px solid red">
       <h2 className="hh">PROJECTS</h2>
 
       {/* Pharmeasy*/}
 
       <div className="projects_container">
-        {/* plantshop */}
+        {/* proshop */}
 
         <div className="project">
           <img className="imgp" src={plant} alt="abc" />
-          <h4 style={{ marginTop: "20px" }}>Cozytrip</h4>
+          <h4 style={{ marginTop: "20px" }}>Proshop</h4>
           <p>
-            PlantShop is E-Commerce website for buying indoor and outdoor plants{" "}
+            ProShop is E-Commerce website for buying indoor and outdoor plants{" "}
           </p>
 
           <h3>Tech Stack:</h3>
@@ -32,7 +27,7 @@ export const Projects = () => {
             style={{ display: "flex", width: "fit-content", margin: "auto" }}
           >
             <a
-              href="https://frotend-shvaniawsthi001-gmailcom.vercel.app/"
+              href="https://proshop-cvsz.onrender.com/"
               target="_blank"
               rel="noreferrer"
             >
